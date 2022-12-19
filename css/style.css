@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(234,40,240);
+    background: linear-gradient(180deg, #ea28f0 0%, #a4ff00 100%) no-repeat;
+    height: 100vh;
+}
+div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+table{
+    font-size: 22px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: aqua;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-shadow: 4px 4px 10px black;
+}
+td{
+    border: 2px solid black;
+    
+}
+
+.titulo{
+    padding: 1em;
+}
+.descripcion1, 
+.descripcion2, 
+.descripcion3{
+    padding: 1em;
+}
+.vacio{
+    visibility: hidden;
+}
+@media screen and (max-width: 700px) {
+    .tabla1,
+  .tabla1 thead,
+  .tabla1 tbody,
+  .tabla1 tr,
+  .tabla1 th,
+  .tabla1 td {
+    display: block;
+  }
+
+  
+  .tabla1 thead {
+    display: none;
+  }
+
+  .tabla1 td {
+    padding-left: 50px;
+    position: relative;
+  }
+
+  .tabla1 td:before {
+    content: attr(data-th);
+    height: 50%;
+    font-weight: bold;
+    left: 30%;
+    padding: 5px;
+    position: absolute;
+  }
+}
